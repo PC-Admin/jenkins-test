@@ -24,7 +24,7 @@ https://plugins.jenkins.io/ssh-agent/
 
 4) Enable and configure 'SSH Agent' with your machines key
 &
-5) Add an 'Execute shell' to Build Steps and enter the commands you wish to execute:
+5) Add an 'Execute shell' to Build Steps and enter the bash commands you wish to execute:
 
 ![Screenshot from 2024-01-26 23-08-25](https://github.com/PC-Admin/jenkins-test/assets/29645145/13ee1f61-7875-4b6d-93d3-67a588181fae)
 
