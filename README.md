@@ -30,3 +30,26 @@ https://plugins.jenkins.io/ssh-agent/
 
 
 
+## Ansible
+
+Configure a similar Freestyle Project with Ansible! :)
+
+1) Install community.general.jenkins_job:
+
+```
+$ ansible-galaxy collection install community.general
+$ pip install python-jenkins
+```
+
+2) Configure an API token in the 'Configure > API TOKEN' section of your account.
+
+3) Add it to ./group_vars/all:
+```
+---
+jenkins_api_token: '224ee7dba9a38374673cb905f189f7dbd7'
+jenkins_url: "http://jenkins.bestozvapes.com"
+```
+
+2) Run the playbook:
+
+`ansible-playbook create_jenkins_job.yml`
